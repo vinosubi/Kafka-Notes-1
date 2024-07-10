@@ -15,3 +15,7 @@ Kafka stores data as a stream of continuous records which can be processed in di
 
 ### Commit Log
 This one is my favorite. When you push data to Kafka it takes and appends them to a stream of records, like appending logs in a log file or if you’re from a Database background like the WAL. This stream of data can be “Replayed” or read from any point in time.
+
+
+Reference
+# https://medium.com/inspiredbrilliance/kafka-basics-and-core-concepts-5fd7a68c3193

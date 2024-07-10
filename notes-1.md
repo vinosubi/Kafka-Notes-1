@@ -60,12 +60,11 @@ Kafka’s architecture consists of nine key components.
 
 **3. Broker:-** Brokers act as intermediaries between producers and consumers. They facilitate message exchange, ensuring messages reach their intended recipients.
 
-                                   ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/ad7b16b1-484a-422d-9020-6a541dd895b8)
+  ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/ad7b16b1-484a-422d-9020-6a541dd895b8)
                                    Process of producer, consumer, and broker
 
 **4. Cluster:-** A Kafka cluster is a group of computers or servers working together for a common purpose. Since Kafka is a distributed system, a Kafka cluster includes multiple Kafka servers or brokers. There can be one or more brokers in a Kafka cluster. This clustering ensures scalability and fault tolerance. For instance, if one broker can’t handle all the data produced, another can take over.
-                                   
-                                   ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/64831ea5-f7a0-43ee-9465-421d11d73149)
+                                    ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/64831ea5-f7a0-43ee-9465-421d11d73149)
                                    Kafka Cluster
 
 **5. Topic:-** A Kafka topic serves as a named channel or category where messages are published by producers and consumed by consumers. Topics are used to organize and categorize data within a Kafka cluster. They are identified by names, which are strings. Producers publish messages to specific topics, and consumers subscribe to one or more topics to consume messages.
@@ -75,13 +74,13 @@ Kafka’s architecture consists of nine key components.
 
 **6. Partitions:-** Producers send data to brokers, and brokers store messages on different topics. If a producer generates a massive amount of data in a short time, a single topic may struggle to handle it. Kafka addresses this by dividing topics into partitions and distributing these partitions across multiple machines. This concept is known as topic partitioning, and each part is called a partition. The number of partitions for a topic can be decided when creating it.
 
-                                        ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/044934c9-2e73-4d94-a903-947bdc5d411f)
+  ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/044934c9-2e73-4d94-a903-947bdc5d411f)
                                         Topic partition
 
 
 **7. Offset:-** When a producer sends data to a broker, the data goes to a specific partition. The partition assigns a unique sequence number, called an offset, to each message. Offset helps consumers keep track of which messages they have consumed and where to resume consumption. For example, if a consumer reads messages 0 to 3 and then stops, it knows to start reading from the 4th offset when it resumes.
 
-                                        ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/0844775d-679e-4cef-8be8-9c35b936b1c6)
+   ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/0844775d-679e-4cef-8be8-9c35b936b1c6)
                                         Offsets
 
 **8. Consumer Groups:-** Since there can be many partitions, a single consumer may not handle all of them efficiently. That’s why Kafka employs consumer groups. These groups consist of multiple consumer instances that work together. They share the workload and read from different partitions in parallel, improving throughput.

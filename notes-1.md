@@ -22,3 +22,11 @@ Reference
  https://medium.com/inspiredbrilliance/kafka-basics-and-core-concepts-5fd7a68c3193
 # handout: end-exclude
 
+"""
+# Python Handout
+
+Turn Python scripts into handouts with Markdown comments and inline figures. An
+alternative to Jupyter notebooks without hidden state that supports any text
+editor.
+""" # handout: exclude
+

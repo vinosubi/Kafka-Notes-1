@@ -18,4 +18,7 @@ This one is my favorite. When you push data to Kafka it takes and appends them t
 
 
 Reference
-# https://medium.com/inspiredbrilliance/kafka-basics-and-core-concepts-5fd7a68c3193
+# handout: begin-exclude
+ https://medium.com/inspiredbrilliance/kafka-basics-and-core-concepts-5fd7a68c3193
+# handout: end-exclude
+

@@ -30,14 +30,13 @@ Kafka is necessary when your application is large or complex, with many servers 
 - **Connection Types:-** These applications use different types of connections, like HTTP, JDBC, TCP, and more. Coordinating and managing these diverse connections across various services can be quite complex.
 
 - **Number of Connections:**- When you have multiple servers connecting to each other, the number of connections can explode quickly. For example, if one server is connected to five others, and you have four such servers, you’re dealing with 20 connections to manage.
-
-                                                ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/d519fbbc-d30f-4b8f-87d3-2abc64243c03)
+   ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/d519fbbc-d30f-4b8f-87d3-2abc64243c03)
                                                 Without Kafka complexity
 
 
 But Kafka simplifies everything. Senders can use any type of data or connection (like HTTP, TCP, JDBC) to Kafka. Kafka securely stores the data. Receivers can then retrieve the data from Kafka. This simplifies communication and reduces the number of connections required.
 
-                                                ![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/88ea3b77-31c8-469f-85f5-8d11c540b79a)
+![image](https://github.com/vinosubi/Kafka-Notes-1/assets/133937082/88ea3b77-31c8-469f-85f5-8d11c540b79a)
                                                 Add Kafka between servers for communication
 
 
